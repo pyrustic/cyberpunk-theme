@@ -1,3 +1,4 @@
+# TODO: move the code in another file. setup.cfg execute __init__ to retrieve __version__ ! :/
 from pyrustic.theme import Theme
 from tk_cyberpunk_theme.native_widget import button
 from tk_cyberpunk_theme.native_widget import canvas
