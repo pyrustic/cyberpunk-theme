@@ -6,6 +6,7 @@ def get_style():
     style = default_style.Checkbutton()
     style.background = constant.COLOR_BLACK
     style.foreground = "#CFCFCF"
+    style.foreground = "#B4C7EF"
     style.font = constant.FONT_FAV_NORMAL
     style.highlightThickness = 0
     style.selectColor = constant.COLOR_CHECKBUTTON

@@ -13,4 +13,5 @@ def get_style():
     style.foreground = "#B4C7EF"
     style.relief = "flat"
     style.inactiveSelectBackground = "#B4C7EF"
+    style.insertBackground = "#B4C7EF"
     return style
