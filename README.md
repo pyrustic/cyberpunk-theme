@@ -1,4 +1,4 @@
-a
+
 <!-- Image -->
 <div align="center">
     <img src="https://raw.githubusercontent.com/pyrustic/misc/master/media/demo-before-after-cyberpunk-theme.png" alt="Cover">
