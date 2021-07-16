@@ -1,8 +1,8 @@
-import stylebase
+import tkstyle
 from cyberpunk_theme import constant
 
 
 def get_style():
-    style = stylebase.Frame()
-    style.background = constant.COLOR_BLACK
+    style = tkstyle.Frame()
+    style.background = constant.COLOR_1
     return style

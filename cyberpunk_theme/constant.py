@@ -1,8 +1,12 @@
 # ========================================
 #               COLORS
 # ========================================
+# NOTE: Hey developer, don't rely on these constants for the moment !
+COLOR_1 = "#121519"
+
+
 COLOR_ALMOST_WHITE = "#F0F8FF"  # yeah, almost...
-COLOR_BLACK = "#101010"
+COLOR_BLACK = COLOR_1
 COLOR_GRAY = "gray"
 COLOR_CHECKBUTTON = "#001313"
 

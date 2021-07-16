@@ -1,34 +1,24 @@
-from themebase import Theme
+import tkstyle
 from cyberpunk_theme.widget import radiobutton
 from cyberpunk_theme.widget import text
 from cyberpunk_theme.widget import label
-from cyberpunk_theme.widget import frame
 from cyberpunk_theme import constant
 
 
-def get_theme():
-    theme = Theme()
-    theme.add_style(_get_body_style(), scope="*Choice*")
-    theme.add_style(_get_radiobutton_style(), scope="*Choice*Radiobutton*")
-    theme.add_style(_get_text_style(), scope="*Choice*Text*")
-    theme.add_style(_get_header_style(), scope="*Choice*label_header*")
-    return theme
+def get_style():
+    style = tkstyle.Toplevel()
+    style.foreground = "#C8C8C8"
+    style.background = constant.COLOR_BLACK
+    style.font = constant.FONT_FAV_NORMAL
+    style.add(_get_radiobutton_style(), pattern="*Radiobutton")
+    style.add(_get_text_style(), pattern="*Text")
+    style.add(_get_header_style(), pattern="*label_header")
+    return style
 
 
 # ========================================
 #                PRIVATE
 # ========================================
-
-
-# body
-def _get_body_style():
-    style = frame.get_style()
-    style.foreground = "#C8C8C8"
-    style.background = constant.COLOR_BLACK
-    style.font = constant.FONT_FAV_NORMAL
-    #style.activeBackground = constant.COLOR_BLACK
-    #style.activeForeground = "#C8C8C8"
-    return style
 
 
 # radiobuttons

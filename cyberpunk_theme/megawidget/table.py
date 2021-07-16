@@ -1,20 +1,20 @@
+import tkstyle
 from cyberpunk_theme.widget import frame
 from cyberpunk_theme.widget import label
 from cyberpunk_theme.widget import listbox
 from cyberpunk_theme.widget import scrollbar
-from themebase import Theme
 from cyberpunk_theme import constant
 
 
 # == table theme
-def get_theme():
-    theme = Theme()
-    theme.add_style(_get_table_header_frame_style(), scope="*Table*frame_background*Frame*")
-    theme.add_style(_get_table_header_style(), scope="*Table*Label*")
-    theme.add_style(_get_table_column_style(), scope="*Table*Listbox*")
-    theme.add_style(_get_table_hsb_style(), scope="*Table*hsb*")
-    theme.add_style(_get_table_vsb_style(), scope="*Table*vsb*")
-    return theme
+def get_style():
+    style = tkstyle.Frame()
+    style.add(_get_table_header_frame_style(), pattern="*frame_background*Frame")
+    style.add(_get_table_header_style(), pattern="*Label")
+    style.add(_get_table_column_style(), pattern="*Listbox")
+    style.add(_get_table_hsb_style(), pattern="*hsb")
+    style.add(_get_table_vsb_style(), pattern="*vsb")
+    return style
 
 
 # ========================================
@@ -31,20 +31,20 @@ def _get_table_header_frame_style():
 # header label
 def _get_table_header_style():
     style = label.get_style()
-    style.font = constant.FONT_FAV_BOLD
+    style.font = constant.FONT_FAV_NORMAL
     style.foreground = "#C8EBEB"
     style.background = "#486B6B"
+    style.highlightThickness = 1
+    style.highlightBackground = "#43474B"
     return style
 
 
 # column
 def _get_table_column_style():
     style = listbox.get_style()
-    style.foreground = "#585858"
-    style.background = "#F0F7F7"
-    style.font = constant.FONT_FAV_NORMAL
-    style.highlightBackground = "#003B3B"
-    style.selectBackground = "#B4C7EF"
+    style.highlightThickness = "1"
+    style.highlightBackground = "#43474B"
+    style.highlightColor = "#43474B"
     return style
 
 

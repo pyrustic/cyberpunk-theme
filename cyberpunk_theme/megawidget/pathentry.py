@@ -1,29 +1,32 @@
-from themebase import Theme
+import tkstyle
 from cyberpunk_theme.widget import frame, button
 from cyberpunk_theme import constant
 
 
 # == confirm theme
-def get_theme():
-    theme = Theme()
-    theme.add_style(_get_frame_style(), scope="*Pathentry.")
-    theme.add_style(_get_button_style(), scope="*Pathentry.Button.")
-    return theme
+def get_style():
+    style = frame.get_style()
+    style.add(_get_button_style(), pattern="*Button")
+    return style
 
 
 # ========================================
 #                PRIVATE
 # ========================================
-# frame style
-def _get_frame_style():
-    style = frame.get_style()
-    return style
 
 # button style
 def _get_button_style():
-    style = button.get_style()
-    style.padX = 0
-    style.padY = 0
-    style.borderWidth = 0
+    style = tkstyle.Button()
+    style.font = constant.FONT_FAV_NORMAL
+    style.background = "#191D21"
+    style.foreground = "#A098A0"
+    style.activeBackground = "#132021"
+    style.activeForeground = "#A098A0"
+    style.highlightBackground = "#484048"
+    style.highlightColor = "white"
     style.highlightThickness = 0
+    style.relief = "flat"
+    style.padY = 0
+    style.padX = 0
+    style.cursor = "hand1"
     return style

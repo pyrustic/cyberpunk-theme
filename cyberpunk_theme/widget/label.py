@@ -1,10 +1,10 @@
-import stylebase
+import tkstyle
 from cyberpunk_theme import constant
 
 
 def get_style():
-    style = stylebase.Label()
+    style = tkstyle.Label()
     style.font = constant.FONT_FAV_NORMAL
     style.background = constant.COLOR_BLACK
-    style.foreground = "#CFCFCF"
+    style.foreground = "#B0B0B0"
     return style

@@ -1,14 +1,13 @@
-import stylebase
+import tkstyle
 from cyberpunk_theme import constant
 
 
 def get_style():
-    style = stylebase.OptionMenu()
+    style = tkstyle.OptionMenu()
     style.font = constant.FONT_FAV_NORMAL
     style.relief = "flat"
     style.selectBackground = "#B4C7EF"
-    style.inactiveSelectBackground = "#B4C7EF"
-    style.background = "#101818"
+    style.background = "blue"
     style.highlightThickness = 0
     style.borderWidth = 0
     style.foreground = "#B4C7EF"

@@ -1,16 +1,18 @@
-import stylebase
+import tkstyle
 from cyberpunk_theme import constant
 
 
 def get_style():
-    style = stylebase.Menubutton()
-    style.font = constant.FONT_FAV_NORMAL
-    style.background = "#101818"
-    style.foreground = "#B4C7EF"
-    style.relief = "flat"
+    style = tkstyle.Menubutton()
+    style.background = "#0C1014"
+    style.foreground = "#B0B0B0"
+    style.activeBackground = "#1E2226"
+    style.activeForeground = "#ABABAB"
     style.borderWidth = 0
+    style.activeBorderWidth = 0
     style.highlightThickness = 0
     style.highlightBackground = "#101010"
-    style.activeBackground = constant.COLOR_CHECKBUTTON
-    style.activeForeground = constant.COLOR_ALMOST_WHITE
+    style.relief = "flat"
+    style.cursor = "hand1"
+    style.font = constant.FONT_DEFAULT_FAMILY, 11, "normal"
     return style

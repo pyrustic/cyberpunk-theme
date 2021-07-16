@@ -1,27 +1,21 @@
 from cyberpunk_theme.widget import label
 from cyberpunk_theme.widget import toplevel
 from cyberpunk_theme import constant
-from themebase import Theme
+import tkstyle
 
 
 # == toast theme
-def get_theme():
-    theme = Theme()
-    theme.add_style(_get_toast_toplevel_style(), scope="*Toast*")
-    theme.add_style(_get_toast_header_label_style(), scope="*Toast*label_header*")
-    theme.add_style(_get_toast_message_label_style(), scope="*Toast*label_message*")
-    return theme
+def get_style():
+    style = toplevel.get_style()
+    style.background = constant.COLOR_BLACK
+    #style.add(_get_toast_header_label_style(), pattern="*label_header")
+    #style.add(_get_toast_message_label_style(), pattern="*label_message")
+    return style
 
 
 # ========================================
 #                PRIVATE
 # ========================================
-# toast toplevel
-def _get_toast_toplevel_style():
-    style = toplevel.get_style()
-    style.background = "#101818"
-    return style
-
 
 # toast header
 def _get_toast_header_label_style():

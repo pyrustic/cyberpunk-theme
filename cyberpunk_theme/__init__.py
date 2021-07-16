@@ -1,4 +1,4 @@
-from themebase import Theme
+import tkstyle
 from cyberpunk_theme.widget import button
 from cyberpunk_theme.widget import canvas
 from cyberpunk_theme.widget import checkbutton
@@ -26,24 +26,21 @@ from cyberpunk_theme.megawidget import toast
 from cyberpunk_theme.megawidget import tree
 
 
-class Cyberpunk(Theme):
+WIDGETS = (button, canvas, checkbutton, entry,
+           frame, label, label_frame, listbox,
+           menu, menubutton, option_menu, paned_window,
+           radiobutton, scale, scrollbar, spinbox, text, toplevel)
+
+
+MEGAWIDGETS = (("Choice", choice), ("Confirm", confirm),
+               ("Pathentry", pathentry), ("Scrollbox", scrollbox),
+               ("Table", table), ("Toast", toast), ("Tree", tree))
+
+
+class Cyberpunk(tkstyle.Theme):
     def __init__(self):
         super().__init__()
-        _add_native_widget_style(self)
-        _add_pyrustic_widget_style(self)
-
-
-def _add_native_widget_style(theme):
-    elements = (button, canvas, checkbutton, entry,
-                frame, label, label_frame, listbox,
-                menu, menubutton, option_menu, paned_window,
-                radiobutton, scale, scrollbar, spinbox, text, toplevel)
-    for element in elements:
-        theme.add_style(element.get_style())
-
-
-def _add_pyrustic_widget_style(theme):
-    elements = (choice, confirm, pathentry, scrollbox,
-                table, toast, tree)
-    for element in elements:
-        theme.add_theme(element.get_theme())
+        for item in WIDGETS:
+            self.add(item.get_style())
+        for name, item in MEGAWIDGETS:
+            self.add(item.get_style(), pattern="*{}".format(name))
