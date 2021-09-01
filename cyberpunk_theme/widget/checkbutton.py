@@ -3,6 +3,10 @@ from cyberpunk_theme import constant
 
 
 def get_style():
+    return get_checkbutton_style_1()
+
+
+def get_checkbutton_style_1():
     style = tkstyle.Checkbutton()
     style.background = constant.COLOR_BLACK
     style.foreground = "#9B9B9B"

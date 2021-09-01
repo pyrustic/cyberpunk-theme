@@ -17,3 +17,14 @@ def get_style():
 
 ```
 
+<br>
+
+```python
+
+def get_text_style_1():
+    """
+    
+    """
+
+```
+

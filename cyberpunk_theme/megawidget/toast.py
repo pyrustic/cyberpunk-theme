@@ -6,6 +6,10 @@ import tkstyle
 
 # == toast theme
 def get_style():
+    return get_toast_style_1()
+
+
+def get_toast_style_1():
     style = toplevel.get_style()
     style.background = constant.COLOR_BLACK
     #style.add(_get_toast_header_label_style(), pattern="*label_header")

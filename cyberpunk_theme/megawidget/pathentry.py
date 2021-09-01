@@ -5,6 +5,10 @@ from cyberpunk_theme import constant
 
 # == confirm theme
 def get_style():
+    return get_pathentry_style_1()
+
+
+def get_pathentry_style_1():
     style = frame.get_style()
     style.add(_get_button_style(), pattern="*Button")
     return style

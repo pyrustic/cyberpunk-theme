@@ -10,6 +10,17 @@ Back to [Reference Overview](https://github.com/pyrustic/cyberpunk-theme/blob/ma
 
 ```python
 
+def get_paned_window_style_1():
+    """
+    
+    """
+
+```
+
+<br>
+
+```python
+
 def get_style():
     """
     

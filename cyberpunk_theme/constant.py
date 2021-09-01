@@ -14,5 +14,5 @@ COLOR_CHECKBUTTON = "#001313"
 #                  FONTS
 # ========================================
 FONT_DEFAULT_FAMILY = "Liberation Mono"
-FONT_FAV_BOLD = FONT_DEFAULT_FAMILY, 13, "bold"
-FONT_FAV_NORMAL = FONT_DEFAULT_FAMILY, 13, "normal"
+FONT_FAV_BOLD = FONT_DEFAULT_FAMILY, 11, "bold"
+FONT_FAV_NORMAL = FONT_DEFAULT_FAMILY, 11, "normal"

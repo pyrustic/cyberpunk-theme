@@ -3,6 +3,10 @@ from cyberpunk_theme import constant
 
 
 def get_style():
+    return get_menu_style_1()
+
+
+def get_menu_style_1():
     style = tkstyle.Menu()
     style.background = "#0C1014"
     style.foreground = "#B0B0B0"

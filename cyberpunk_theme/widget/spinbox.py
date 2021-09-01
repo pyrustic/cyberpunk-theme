@@ -3,6 +3,10 @@ from cyberpunk_theme import constant
 
 
 def get_style():
+    return get_spinbox_style_1()
+
+
+def get_spinbox_style_1():
     style = tkstyle.Spinbox()
     style.font = constant.FONT_FAV_NORMAL
     style.foreground = "#9B9B9B"

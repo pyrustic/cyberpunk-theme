@@ -3,6 +3,10 @@ from cyberpunk_theme import constant
 
 
 def get_style():
+    return get_listbox_style_1()
+
+
+def get_listbox_style_1():
     style = tkstyle.Listbox()
     style.font = constant.FONT_FAV_NORMAL
     style.relief = "flat"

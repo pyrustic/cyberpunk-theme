@@ -3,6 +3,10 @@ from cyberpunk_theme import constant
 
 
 def get_style():
+    return get_scrollbar_style_1()
+
+
+def get_scrollbar_style_1():
     style = tkstyle.Scrollbar()
     style.activeBackground = "#292D31"
     style.background = "#191D21"

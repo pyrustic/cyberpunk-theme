@@ -3,6 +3,10 @@ from cyberpunk_theme import constant
 
 
 def get_style():
+    return get_label_frame_style_1()
+
+
+def get_label_frame_style_1():
     style = tkstyle.LabelFrame()
     style.font = constant.FONT_FAV_NORMAL
     style.background = constant.COLOR_BLACK

@@ -8,6 +8,10 @@ from cyberpunk_theme import constant
 
 # == table theme
 def get_style():
+    return get_table_style_1()
+
+
+def get_table_style_1():
     style = tkstyle.Frame()
     style.add(_get_table_header_frame_style(), pattern="*frame_background*Frame")
     style.add(_get_table_header_style(), pattern="*Label")

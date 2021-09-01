@@ -10,7 +10,18 @@ Back to [Reference Overview](https://github.com/pyrustic/cyberpunk-theme/blob/ma
 
 ```python
 
-def get_theme():
+def get_style():
+    """
+    
+    """
+
+```
+
+<br>
+
+```python
+
+def get_toast_style_1():
     """
     
     """

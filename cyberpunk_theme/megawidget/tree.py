@@ -4,6 +4,10 @@ from cyberpunk_theme import constant
 
 # == tree theme
 def get_style():
+    return get_tree_style_1()
+
+
+def get_tree_style_1():
     style = tkstyle.Frame()
     style.background = constant.COLOR_1
     style.add(_get_tree_node_style(), pattern="*FrameNode")

@@ -3,6 +3,10 @@ from cyberpunk_theme import constant
 
 
 def get_style():
+    return get_option_menu_style_1()
+
+
+def get_option_menu_style_1():
     style = tkstyle.OptionMenu()
     style.font = constant.FONT_FAV_NORMAL
     style.relief = "flat"

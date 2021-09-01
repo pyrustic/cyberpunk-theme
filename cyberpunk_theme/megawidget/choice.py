@@ -6,6 +6,10 @@ from cyberpunk_theme import constant
 
 
 def get_style():
+    return get_choice_style_1()
+
+
+def get_choice_style_1():
     style = tkstyle.Toplevel()
     style.foreground = "#C8C8C8"
     style.background = constant.COLOR_BLACK
@@ -14,7 +18,6 @@ def get_style():
     style.add(_get_text_style(), pattern="*Text")
     style.add(_get_header_style(), pattern="*label_header")
     return style
-
 
 # ========================================
 #                PRIVATE

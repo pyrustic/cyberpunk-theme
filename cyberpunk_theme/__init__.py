@@ -38,7 +38,7 @@ MEGAWIDGETS = (("Choice", choice), ("Confirm", confirm),
 
 
 class Cyberpunk(tkstyle.Theme):
-    def __init__(self):
+    def __init__(self ):
         super().__init__()
         for item in WIDGETS:
             self.add(item.get_style())

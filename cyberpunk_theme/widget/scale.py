@@ -3,6 +3,10 @@ from cyberpunk_theme import constant
 
 
 def get_style():
+    return get_scale_style_1()
+
+
+def get_scale_style_1():
     style = tkstyle.Scale()
     style.font = constant.FONT_FAV_NORMAL
     style.foreground = "#B0B0B0"
