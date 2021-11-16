@@ -9,7 +9,7 @@ No description
 
 ## Functions
 ```python
-def get_style(**kwargs):
+def get_style(font_family=None, font_size=None):
     """
     
     """
