@@ -3,7 +3,7 @@ from cyberpunk_theme import constant
 
 
 # == tree theme
-def get_style(font_family=None, font_size=None):
+def get_style(**kwargs):
     style = tkstyle.Frame()
     style.background = constant.BACKGROUND_COLOR
     style.add(_get_tree_node_style(), pattern="*FrameNode")
