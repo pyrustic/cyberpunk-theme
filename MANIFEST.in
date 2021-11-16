@@ -1,4 +1,3 @@
 recursive-include cyberpunk_theme *
 global-exclude *.py[cod]
 include VERSION
-
