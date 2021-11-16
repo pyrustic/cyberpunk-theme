@@ -5,15 +5,12 @@ from cyberpunk_theme.widget import label
 from cyberpunk_theme import constant
 
 
-def get_style():
-    return get_choice_style_1()
-
-
-def get_choice_style_1():
+def get_style(font_family=constant.FONT_FAMILY,
+              font_size=constant.FONT_SIZE):
     style = tkstyle.Toplevel()
     style.foreground = "#C8C8C8"
-    style.background = constant.COLOR_BLACK
-    style.font = constant.FONT_FAV_NORMAL
+    style.background = constant.BACKGROUND_COLOR
+    style.font = (font_family, font_size, "normal")
     style.add(_get_radiobutton_style(), pattern="*Radiobutton")
     style.add(_get_text_style(), pattern="*Text")
     style.add(_get_header_style(), pattern="*label_header")
@@ -25,23 +22,27 @@ def get_choice_style_1():
 
 
 # radiobuttons
-def _get_radiobutton_style():
+def _get_radiobutton_style(font_family=constant.FONT_FAMILY,
+                           font_size=constant.FONT_SIZE):
     style = radiobutton.get_style()
     style.foreground = "#C8C8C8"
-    style.background = constant.COLOR_BLACK
-    style.font = constant.FONT_FAV_NORMAL
-    style.activeBackground = constant.COLOR_BLACK
+    style.background = constant.BACKGROUND_COLOR
+    style.font = (font_family, font_size, "normal")
+    style.activeBackground = constant.BACKGROUND_COLOR
     style.activeForeground = "#C8C8C8"
-    style.selectColor = constant.COLOR_BLACK
+    style.selectColor = constant.BACKGROUND_COLOR
     style.relief = "flat"
     style.highlightThickness = 0
     return style
 
+
 # header
-def _get_header_style():
+def _get_header_style(font_family=constant.FONT_FAMILY,
+                      font_size=constant.FONT_SIZE):
     style = label.get_style()
-    style.font = constant.FONT_FAV_BOLD
+    style.font = (font_family, font_size, "bold")
     return style
+
 
 # text
 def _get_text_style():

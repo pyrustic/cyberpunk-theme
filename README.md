@@ -54,8 +54,7 @@ Some generic widgets like the `Button` widget have multiple styles.
 
 ```python
 import tkinter as tk
-from cyberpunk_theme.widget.button import get_button_style_1
-
+from cyberpunk_theme.widget.button import get_button_dark_style
 
 # root
 root = tk.Tk()
@@ -65,7 +64,7 @@ button = tk.Button(root, text="Click")
 button.pack()
 
 # style
-button_style_1 = get_button_style_1()
+button_style_1 = get_button_dark_style()
 button_style_1.target(button)
 
 # mainloop

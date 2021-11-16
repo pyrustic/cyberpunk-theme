@@ -7,14 +7,13 @@ from cyberpunk_theme import constant
 
 
 # == table theme
-def get_style():
-    return get_table_style_1()
-
-
-def get_table_style_1():
+def get_style(font_family=constant.FONT_FAMILY,
+              font_size=constant.FONT_SIZE):
     style = tkstyle.Frame()
     style.add(_get_table_header_frame_style(), pattern="*frame_background*Frame")
-    style.add(_get_table_header_style(), pattern="*Label")
+    style.add(_get_table_header_style(font_family=font_family,
+                                      font_size=font_size),
+              pattern="*Label")
     style.add(_get_table_column_style(), pattern="*Listbox")
     style.add(_get_table_hsb_style(), pattern="*hsb")
     style.add(_get_table_vsb_style(), pattern="*vsb")
@@ -33,9 +32,10 @@ def _get_table_header_frame_style():
 
 
 # header label
-def _get_table_header_style():
+def _get_table_header_style(font_family=constant.FONT_FAMILY,
+                            font_size=constant.FONT_SIZE):
     style = label.get_style()
-    style.font = constant.FONT_FAV_NORMAL
+    style.font = (font_family, font_size, "normal")
     style.foreground = "#C8EBEB"
     style.background = "#486B6B"
     style.highlightThickness = 1
@@ -46,8 +46,9 @@ def _get_table_header_style():
 # column
 def _get_table_column_style():
     style = listbox.get_style()
-    style.highlightThickness = "1"
+    style.highlightThickness = 1
     style.highlightBackground = "#43474B"
+    style.highlightBackground = "#1C1922"
     style.highlightColor = "#43474B"
     return style
 

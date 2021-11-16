@@ -2,20 +2,17 @@ import tkstyle
 from cyberpunk_theme import constant
 
 
-def get_style():
-    return get_option_menu_style_1()
-
-
-def get_option_menu_style_1():
+def get_style(font_family=constant.FONT_FAMILY,
+              font_size=constant.FONT_SIZE):
     style = tkstyle.OptionMenu()
-    style.font = constant.FONT_FAV_NORMAL
+    style.font = (font_family, font_size, "normal")
     style.relief = "flat"
     style.selectBackground = "#B4C7EF"
-    style.background = "blue"
     style.highlightThickness = 0
     style.borderWidth = 0
     style.foreground = "#B4C7EF"
     style.relief = "flat"
     style.inactiveSelectBackground = "#B4C7EF"
     style.insertBackground = "#B4C7EF"
+    style.highlightColor = "gray"
     return style

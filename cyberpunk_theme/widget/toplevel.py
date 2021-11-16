@@ -2,11 +2,7 @@ import tkstyle
 from cyberpunk_theme import constant
 
 
-def get_style():
-    return get_toplevel_style_1()
-
-
-def get_toplevel_style_1():
+def get_style(**kwargs):
     style = tkstyle.Toplevel()
-    style.background = constant.COLOR_BLACK
+    style.background = constant.BACKGROUND_COLOR
     return style

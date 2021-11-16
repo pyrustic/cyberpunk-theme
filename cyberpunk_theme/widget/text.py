@@ -2,13 +2,10 @@ import tkstyle
 from cyberpunk_theme import constant
 
 
-def get_style():
-    return get_text_style_1()
-
-
-def get_text_style_1():
+def get_style(font_family=constant.FONT_FAMILY,
+              font_size=constant.FONT_SIZE):
     style = tkstyle.Text()
-    style.font = constant.FONT_FAV_NORMAL
+    style.font = (font_family, font_size, "normal")
     style.foreground = "#9B9B9B"
     style.background = "#1C2024"
     style.selectBackground = "#105B74"

@@ -1,4 +1,5 @@
 import tkstyle
+from cyberpunk_theme import constant
 from cyberpunk_theme.widget import button
 from cyberpunk_theme.widget import canvas
 from cyberpunk_theme.widget import checkbutton
@@ -18,8 +19,8 @@ from cyberpunk_theme.widget import spinbox
 from cyberpunk_theme.widget import text
 from cyberpunk_theme.widget import toplevel
 from cyberpunk_theme.megawidget import choice
-from cyberpunk_theme.megawidget import confirm
-from cyberpunk_theme.megawidget import pathentry
+from cyberpunk_theme.megawidget import confirmation
+from cyberpunk_theme.megawidget import pathfield
 from cyberpunk_theme.megawidget import scrollbox
 from cyberpunk_theme.megawidget import table
 from cyberpunk_theme.megawidget import toast
@@ -32,15 +33,25 @@ WIDGETS = (button, canvas, checkbutton, entry,
            radiobutton, scale, scrollbar, spinbox, text, toplevel)
 
 
-MEGAWIDGETS = (("Choice", choice), ("Confirm", confirm),
-               ("Pathentry", pathentry), ("Scrollbox", scrollbox),
+MEGAWIDGETS = (("Choice", choice), ("Confirmation", confirmation),
+               ("PathField", pathfield), ("ScrollBox", scrollbox),
                ("Table", table), ("Toast", toast), ("Tree", tree))
 
 
 class Cyberpunk(tkstyle.Theme):
-    def __init__(self ):
+    def __init__(self, font_family=constant.FONT_FAMILY,
+                 font_size=constant.FONT_SIZE):
         super().__init__()
+        self._add_widgets(font_family, font_size)
+        self._add_megawidgets(font_family, font_size)
+
+    def _add_widgets(self, font_family, font_size):
         for item in WIDGETS:
-            self.add(item.get_style())
+            self.add(item.get_style(font_family=font_family,
+                                    font_size=font_size))
+
+    def _add_megawidgets(self, font_family, font_size):
         for name, item in MEGAWIDGETS:
-            self.add(item.get_style(), pattern="*{}".format(name))
+            self.add(item.get_style(font_family=font_family,
+                                    font_size=font_size),
+                     pattern="*{}".format(name))

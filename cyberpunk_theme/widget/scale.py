@@ -2,15 +2,12 @@ import tkstyle
 from cyberpunk_theme import constant
 
 
-def get_style():
-    return get_scale_style_1()
-
-
-def get_scale_style_1():
+def get_style(font_family=constant.FONT_FAMILY,
+              font_size=constant.FONT_SIZE):
     style = tkstyle.Scale()
-    style.font = constant.FONT_FAV_NORMAL
+    style.font = (font_family, font_size, "normal")
     style.foreground = "#B0B0B0"
-    style.background = constant.COLOR_BLACK
+    style.background = constant.BACKGROUND_COLOR
     style.troughColor = "#1C2024"
     style.activeBackground = "#004B64"
     style.selectBackground = "#105B74"

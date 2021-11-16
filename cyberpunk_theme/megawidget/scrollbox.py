@@ -1,13 +1,9 @@
-from cyberpunk_theme import constant
 import tkstyle
+from cyberpunk_theme import constant
 
 
 # == scrollbox theme
-def get_style():
-    return get_scrollbox_style_1()
-
-
-def get_scrollbox_style_1():
+def get_style(**kwargs):
     style = tkstyle.Frame()
-    style.background = constant.COLOR_1
+    style.background = constant.BACKGROUND_COLOR
     return style

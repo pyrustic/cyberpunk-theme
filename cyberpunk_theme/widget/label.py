@@ -2,14 +2,14 @@ import tkstyle
 from cyberpunk_theme import constant
 
 
-def get_style():
-    return get_label_style_1()
-
-
-def get_label_style_1():
+def get_style(font_family=constant.FONT_FAMILY,
+              font_size=constant.FONT_SIZE):
     style = tkstyle.Label()
-    style.font = constant.FONT_FAV_NORMAL
-    style.background = constant.COLOR_BLACK
-    style.foreground = "#B0B0B0"
+    style.font = (font_family, font_size, "normal")
+    style.background = constant.BACKGROUND_COLOR
     style.foreground = "#A8A8A8"
+    style.highlightThickness = 0
+    style.borderWidth = 0
+    style.padX = 0
+    style.padY = 0
     return style

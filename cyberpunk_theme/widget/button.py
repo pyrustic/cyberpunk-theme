@@ -2,13 +2,15 @@ import tkstyle
 from cyberpunk_theme import constant
 
 
-def get_style():
-    return get_button_style_1()
+def get_style(font_family=constant.FONT_FAMILY,
+              font_size=constant.FONT_SIZE):
+    return get_button_dark_style(font_family=font_family, font_size=font_size)
 
 
-def get_button_style_1():
+def get_button_dark_style(font_family=constant.FONT_FAMILY,
+                          font_size=constant.FONT_SIZE):
     style = tkstyle.Button()
-    style.font = constant.FONT_FAV_NORMAL
+    style.font = (font_family, font_size, "normal")
     style.background = "#111519"
     style.foreground = "#A098A0"
     style.activeBackground = "#191D21"
@@ -22,9 +24,10 @@ def get_button_style_1():
     return style
 
 
-def get_button_style_2():
+def get_button_dark_filled_style(font_family=constant.FONT_FAMILY,
+                                 font_size=constant.FONT_SIZE):
     style = tkstyle.Button()
-    style.font = constant.FONT_FAV_NORMAL
+    style.font = (font_family, font_size, "normal")
     style.background = "#191D21"
     style.foreground = "#A098A0"
     style.activeBackground = "#111519"
@@ -38,9 +41,10 @@ def get_button_style_2():
     return style
 
 
-def get_button_style_3():
+def get_button_blue_style(font_family=constant.FONT_FAMILY,
+                          font_size=constant.FONT_SIZE):
     style = tkstyle.Button()
-    style.font = constant.FONT_FAV_NORMAL
+    style.font = (font_family, font_size, "normal")
     style.background = "#131723"
     style.foreground = "#2E9CB5"
     style.activeBackground = "#004B64"
@@ -54,9 +58,10 @@ def get_button_style_3():
     return style
 
 
-def get_button_style_4():
+def get_button_blue_filled_style(font_family=constant.FONT_FAMILY,
+                                 font_size=constant.FONT_SIZE):
     style = tkstyle.Button()
-    style.font = constant.FONT_FAV_NORMAL
+    style.font = (font_family, font_size, "normal")
     style.background = "#004B64"
     style.foreground = "#74BFD8"
     style.activeBackground = "#131723"
@@ -70,9 +75,10 @@ def get_button_style_4():
     return style
 
 
-def get_button_style_5():
+def get_button_green_style(font_family=constant.FONT_FAMILY,
+                           font_size=constant.FONT_SIZE):
     style = tkstyle.Button()
-    style.font = constant.FONT_FAV_NORMAL
+    style.font = (font_family, font_size, "normal")
     style.background = "#111C19"
     style.foreground = "#55977D"
     style.activeBackground = "#094431"
@@ -86,9 +92,10 @@ def get_button_style_5():
     return style
 
 
-def get_button_style_6():
+def get_button_green_filled_style(font_family=constant.FONT_FAMILY,
+                                  font_size=constant.FONT_SIZE):
     style = tkstyle.Button()
-    style.font = constant.FONT_FAV_NORMAL
+    style.font = (font_family, font_size, "normal")
     style.background = "#094431"
     style.foreground = "#84BFAC"
     style.activeBackground = "#111C19"
@@ -102,9 +109,10 @@ def get_button_style_6():
     return style
 
 
-def get_button_style_7():
+def get_button_yellow_style(font_family=constant.FONT_FAMILY,
+                            font_size=constant.FONT_SIZE):
     style = tkstyle.Button()
-    style.font = constant.FONT_FAV_NORMAL
+    style.font = (font_family, font_size, "normal")
     style.background = "#222219"
     style.foreground = "#956300"
     style.activeBackground = "#956300"
@@ -118,9 +126,10 @@ def get_button_style_7():
     return style
 
 
-def get_button_style_8():
+def get_button_yellow_filled_style(font_family=constant.FONT_FAMILY,
+                                   font_size=constant.FONT_SIZE):
     style = tkstyle.Button()
-    style.font = constant.FONT_FAV_NORMAL
+    style.font = (font_family, font_size, "normal")
     style.background = "#956300"
     style.foreground = "#E5E59F"
     style.activeBackground = "#222219"
@@ -134,9 +143,10 @@ def get_button_style_8():
     return style
 
 
-def get_button_style_9():
+def get_button_red_style(font_family=constant.FONT_FAMILY,
+                         font_size=constant.FONT_SIZE):
     style = tkstyle.Button()
-    style.font = constant.FONT_FAV_NORMAL
+    style.font = (font_family, font_size, "normal")
     style.background = "#1B1519"
     style.foreground = "#AA2323"
     style.activeBackground = "#AA2323"
@@ -150,9 +160,10 @@ def get_button_style_9():
     return style
 
 
-def get_button_style_10():
+def get_button_red_filled_style(font_family=constant.FONT_FAMILY,
+                                font_size=constant.FONT_SIZE):
     style = tkstyle.Button()
-    style.font = constant.FONT_FAV_NORMAL
+    style.font = (font_family, font_size, "normal")
     style.background = "#AA2323"
     style.foreground = "#FFB8B8"
     style.activeBackground = "#1B1519"
