@@ -1,169 +1,137 @@
-# Modules Documentation - Overview
+# Modules Documentation
 
-**cyberpunk\_theme.\_\_init\_\_**
+[cyberpunk\_theme](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme/README.md#module-overview)
 <br>
 No description
-<br>
-[constants (2)](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.__init__/constants.md) &nbsp;.&nbsp; [classes (1)](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.__init__/classes.md)
 
-**cyberpunk\_theme.\_\_main\_\_**
+
+[cyberpunk\_theme.constant](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.constant/README.md#module-overview)
 <br>
 No description
-<br>
-[functions (1)](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.__main__/functions.md)
 
-**cyberpunk\_theme.constant**
+
+[cyberpunk\_theme.megawidget.choice](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.megawidget.choice/README.md#module-overview)
 <br>
 No description
-<br>
-[constants (3)](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.constant/constants.md)
 
-**cyberpunk\_theme.megawidget.choice**
+
+[cyberpunk\_theme.megawidget.confirmation](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.megawidget.confirmation/README.md#module-overview)
 <br>
 No description
-<br>
-[functions (4)](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.megawidget.choice/functions.md)
 
-**cyberpunk\_theme.megawidget.confirmation**
+
+[cyberpunk\_theme.megawidget.pathfield](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.megawidget.pathfield/README.md#module-overview)
 <br>
 No description
-<br>
-[functions (3)](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.megawidget.confirmation/functions.md)
 
-**cyberpunk\_theme.megawidget.pathfield**
+
+[cyberpunk\_theme.megawidget.scrollbox](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.megawidget.scrollbox/README.md#module-overview)
 <br>
 No description
-<br>
-[functions (2)](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.megawidget.pathfield/functions.md)
 
-**cyberpunk\_theme.megawidget.scrollbox**
+
+[cyberpunk\_theme.megawidget.table](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.megawidget.table/README.md#module-overview)
 <br>
 No description
-<br>
-[functions (1)](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.megawidget.scrollbox/functions.md)
 
-**cyberpunk\_theme.megawidget.table**
+
+[cyberpunk\_theme.megawidget.toast](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.megawidget.toast/README.md#module-overview)
 <br>
 No description
-<br>
-[functions (6)](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.megawidget.table/functions.md)
 
-**cyberpunk\_theme.megawidget.toast**
+
+[cyberpunk\_theme.megawidget.tree](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.megawidget.tree/README.md#module-overview)
 <br>
 No description
-<br>
-[functions (3)](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.megawidget.toast/functions.md)
 
-**cyberpunk\_theme.megawidget.tree**
+
+[cyberpunk\_theme.widget.button](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.widget.button/README.md#module-overview)
 <br>
 No description
-<br>
-[functions (4)](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.megawidget.tree/functions.md)
 
-**cyberpunk\_theme.widget.button**
+
+[cyberpunk\_theme.widget.canvas](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.widget.canvas/README.md#module-overview)
 <br>
 No description
-<br>
-[functions (11)](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.widget.button/functions.md)
 
-**cyberpunk\_theme.widget.canvas**
+
+[cyberpunk\_theme.widget.checkbutton](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.widget.checkbutton/README.md#module-overview)
 <br>
 No description
-<br>
-[functions (1)](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.widget.canvas/functions.md)
 
-**cyberpunk\_theme.widget.checkbutton**
+
+[cyberpunk\_theme.widget.entry](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.widget.entry/README.md#module-overview)
 <br>
 No description
-<br>
-[functions (1)](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.widget.checkbutton/functions.md)
 
-**cyberpunk\_theme.widget.entry**
+
+[cyberpunk\_theme.widget.frame](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.widget.frame/README.md#module-overview)
 <br>
 No description
-<br>
-[functions (1)](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.widget.entry/functions.md)
 
-**cyberpunk\_theme.widget.frame**
+
+[cyberpunk\_theme.widget.label](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.widget.label/README.md#module-overview)
 <br>
 No description
-<br>
-[functions (1)](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.widget.frame/functions.md)
 
-**cyberpunk\_theme.widget.label**
+
+[cyberpunk\_theme.widget.label\_frame](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.widget.label_frame/README.md#module-overview)
 <br>
 No description
-<br>
-[functions (1)](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.widget.label/functions.md)
 
-**cyberpunk\_theme.widget.label\_frame**
+
+[cyberpunk\_theme.widget.listbox](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.widget.listbox/README.md#module-overview)
 <br>
 No description
-<br>
-[functions (1)](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.widget.label_frame/functions.md)
 
-**cyberpunk\_theme.widget.listbox**
+
+[cyberpunk\_theme.widget.menu](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.widget.menu/README.md#module-overview)
 <br>
 No description
-<br>
-[functions (1)](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.widget.listbox/functions.md)
 
-**cyberpunk\_theme.widget.menu**
+
+[cyberpunk\_theme.widget.menubutton](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.widget.menubutton/README.md#module-overview)
 <br>
 No description
-<br>
-[functions (1)](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.widget.menu/functions.md)
 
-**cyberpunk\_theme.widget.menubutton**
+
+[cyberpunk\_theme.widget.option\_menu](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.widget.option_menu/README.md#module-overview)
 <br>
 No description
-<br>
-[functions (1)](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.widget.menubutton/functions.md)
 
-**cyberpunk\_theme.widget.option\_menu**
+
+[cyberpunk\_theme.widget.paned\_window](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.widget.paned_window/README.md#module-overview)
 <br>
 No description
-<br>
-[functions (1)](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.widget.option_menu/functions.md)
 
-**cyberpunk\_theme.widget.paned\_window**
+
+[cyberpunk\_theme.widget.radiobutton](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.widget.radiobutton/README.md#module-overview)
 <br>
 No description
-<br>
-[functions (1)](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.widget.paned_window/functions.md)
 
-**cyberpunk\_theme.widget.radiobutton**
+
+[cyberpunk\_theme.widget.scale](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.widget.scale/README.md#module-overview)
 <br>
 No description
-<br>
-[functions (1)](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.widget.radiobutton/functions.md)
 
-**cyberpunk\_theme.widget.scale**
+
+[cyberpunk\_theme.widget.scrollbar](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.widget.scrollbar/README.md#module-overview)
 <br>
 No description
-<br>
-[functions (1)](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.widget.scale/functions.md)
 
-**cyberpunk\_theme.widget.scrollbar**
+
+[cyberpunk\_theme.widget.spinbox](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.widget.spinbox/README.md#module-overview)
 <br>
 No description
-<br>
-[functions (1)](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.widget.scrollbar/functions.md)
 
-**cyberpunk\_theme.widget.spinbox**
+
+[cyberpunk\_theme.widget.text](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.widget.text/README.md#module-overview)
 <br>
 No description
-<br>
-[functions (1)](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.widget.spinbox/functions.md)
 
-**cyberpunk\_theme.widget.text**
+
+[cyberpunk\_theme.widget.toplevel](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.widget.toplevel/README.md#module-overview)
 <br>
 No description
-<br>
-[functions (1)](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.widget.text/functions.md)
 
-**cyberpunk\_theme.widget.toplevel**
-<br>
-No description
-<br>
-[functions (1)](https://github.com/pyrustic/cyberpunk-theme/blob/master/docs/modules/content/cyberpunk_theme.widget.toplevel/functions.md)
+

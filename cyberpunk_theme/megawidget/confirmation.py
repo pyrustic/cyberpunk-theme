@@ -6,10 +6,10 @@ from cyberpunk_theme import constant
 def get_style(font_family=constant.FONT_FAMILY,
               font_size=constant.FONT_SIZE):
     style = toplevel.get_style()
-    style.add(_get_confirm_label_header_style(font_family=font_family,
+    style.extend(_get_confirm_label_header_style(font_family=font_family,
                                               font_size=font_size),
               pattern="*label_header")
-    style.add(_get_confirm_label_message_style(), pattern="*label_message")
+    style.extend(_get_confirm_label_message_style(), pattern="*label_message")
     return style
 
 

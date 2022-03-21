@@ -11,9 +11,9 @@ def get_style(font_family=constant.FONT_FAMILY,
     style.foreground = "#C8C8C8"
     style.background = constant.BACKGROUND_COLOR
     style.font = (font_family, font_size, "normal")
-    style.add(_get_radiobutton_style(), pattern="*Radiobutton")
-    style.add(_get_text_style(), pattern="*Text")
-    style.add(_get_header_style(), pattern="*label_header")
+    style.extend(_get_radiobutton_style(), pattern="*Radiobutton")
+    style.extend(_get_text_style(), pattern="*Text")
+    style.extend(_get_header_style(), pattern="*label_header")
     return style
 
 # ========================================

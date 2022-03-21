@@ -7,7 +7,7 @@ from cyberpunk_theme import constant
 def get_style(font_family=constant.FONT_FAMILY,
               font_size=constant.FONT_SIZE):
     style = frame.get_style()
-    style.add(_get_button_style(font_family=font_family,
+    style.extend(_get_button_style(font_family=font_family,
                                 font_size=font_size),
               pattern="*Button")
     return style

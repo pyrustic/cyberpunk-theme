@@ -10,13 +10,13 @@ from cyberpunk_theme import constant
 def get_style(font_family=constant.FONT_FAMILY,
               font_size=constant.FONT_SIZE):
     style = tkstyle.Frame()
-    style.add(_get_table_header_frame_style(), pattern="*frame_background*Frame")
-    style.add(_get_table_header_style(font_family=font_family,
+    style.extend(_get_table_header_frame_style(), pattern="*frame_background*Frame")
+    style.extend(_get_table_header_style(font_family=font_family,
                                       font_size=font_size),
               pattern="*Label")
-    style.add(_get_table_column_style(), pattern="*Listbox")
-    style.add(_get_table_hsb_style(), pattern="*hsb")
-    style.add(_get_table_vsb_style(), pattern="*vsb")
+    style.extend(_get_table_column_style(), pattern="*Listbox")
+    style.extend(_get_table_hsb_style(), pattern="*hsb")
+    style.extend(_get_table_vsb_style(), pattern="*vsb")
     return style
 
 

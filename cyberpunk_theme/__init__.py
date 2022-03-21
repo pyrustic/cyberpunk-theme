@@ -27,31 +27,72 @@ from cyberpunk_theme.megawidget import toast
 from cyberpunk_theme.megawidget import tree
 
 
-WIDGETS = (button, canvas, checkbutton, entry,
-           frame, label, label_frame, listbox,
-           menu, menubutton, option_menu, paned_window,
-           radiobutton, scale, scrollbar, spinbox, text, toplevel)
+def get_theme(font_family=constant.FONT_FAMILY,
+              font_size=constant.FONT_SIZE):
+    theme = tkstyle.Theme()
+    _add_widgets_styles(theme, font_family=font_family, font_size=font_size)
+    _add_megawidgets_styles(theme, font_family=font_family, font_size=font_size)
+    return theme
 
 
-MEGAWIDGETS = (("Choice", choice), ("Confirmation", confirmation),
-               ("PathField", pathfield), ("ScrollBox", scrollbox),
-               ("Table", table), ("Toast", toast), ("Tree", tree))
+def _add_widgets_styles(theme, font_family, font_size):
+    # button
+    theme.add(button.get_style(font_family=font_family, font_size=font_size))
+    # canvas
+    theme.add(canvas.get_style(font_family=font_family, font_size=font_size))
+    # checkbutton
+    theme.add(checkbutton.get_style(font_family=font_family, font_size=font_size))
+    # entry
+    theme.add(entry.get_style(font_family=font_family, font_size=font_size))
+    # frame
+    theme.add(frame.get_style(font_family=font_family, font_size=font_size))
+    # label
+    theme.add(label.get_style(font_family=font_family, font_size=font_size))
+    # label_frame
+    theme.add(label_frame.get_style(font_family=font_family, font_size=font_size))
+    # listbox
+    theme.add(listbox.get_style(font_family=font_family, font_size=font_size))
+    # menu
+    theme.add(menu.get_style(font_family=font_family, font_size=font_size))
+    # menubutton
+    theme.add(menubutton.get_style(font_family=font_family, font_size=font_size))
+    # option_menu
+    theme.add(option_menu.get_style(font_family=font_family, font_size=font_size))
+    # paned_window
+    theme.add(paned_window.get_style(font_family=font_family, font_size=font_size))
+    # radiobutton
+    theme.add(radiobutton.get_style(font_family=font_family, font_size=font_size))
+    # scale
+    theme.add(scale.get_style(font_family=font_family, font_size=font_size))
+    # scrollbar
+    theme.add(scrollbar.get_style(font_family=font_family, font_size=font_size))
+    # spinbox
+    theme.add(spinbox.get_style(font_family=font_family, font_size=font_size))
+    # text
+    theme.add(text.get_style(font_family=font_family, font_size=font_size))
+    # toplevel
+    theme.add(toplevel.get_style(font_family=font_family, font_size=font_size))
 
 
-class Cyberpunk(tkstyle.Theme):
-    def __init__(self, font_family=constant.FONT_FAMILY,
-                 font_size=constant.FONT_SIZE):
-        super().__init__()
-        self._add_widgets(font_family, font_size)
-        self._add_megawidgets(font_family, font_size)
-
-    def _add_widgets(self, font_family, font_size):
-        for item in WIDGETS:
-            self.add(item.get_style(font_family=font_family,
-                                    font_size=font_size))
-
-    def _add_megawidgets(self, font_family, font_size):
-        for name, item in MEGAWIDGETS:
-            self.add(item.get_style(font_family=font_family,
-                                    font_size=font_size),
-                     pattern="*{}".format(name))
+def _add_megawidgets_styles(theme, font_family, font_size):
+    # Choice
+    theme.add(choice.get_style(font_family=font_family, font_size=font_size),
+              pattern="*Choice")
+    # Confirmation
+    theme.add(confirmation.get_style(font_family=font_family, font_size=font_size),
+              pattern="*Confirmation")
+    # PathField
+    theme.add(pathfield.get_style(font_family=font_family, font_size=font_size),
+              pattern="*PathField")
+    # ScrollBox
+    theme.add(scrollbox.get_style(font_family=font_family, font_size=font_size),
+              pattern="*ScrollBox")
+    # Table
+    theme.add(table.get_style(font_family=font_family, font_size=font_size),
+              pattern="*Table")
+    # Toast
+    theme.add(toast.get_style(font_family=font_family, font_size=font_size),
+              pattern="*Toast")
+    # Tree
+    theme.add(tree.get_style(font_family=font_family, font_size=font_size),
+              pattern="*Tree")

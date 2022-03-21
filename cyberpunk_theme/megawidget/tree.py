@@ -6,9 +6,9 @@ from cyberpunk_theme import constant
 def get_style(**kwargs):
     style = tkstyle.Frame()
     style.background = constant.BACKGROUND_COLOR
-    style.add(_get_tree_node_style(), pattern="*FrameNode")
-    style.add(_get_tree_header_style(), pattern="*frame_header")
-    style.add(_get_tree_box_style(), pattern="*frame_box")
+    style.extend(_get_tree_node_style(), pattern="*FrameNode")
+    style.extend(_get_tree_header_style(), pattern="*frame_header")
+    style.extend(_get_tree_box_style(), pattern="*frame_box")
     return style
 
 
